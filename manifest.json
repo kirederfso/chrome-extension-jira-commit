@@ -4,12 +4,10 @@
   "name": "Copy Jira task id",
   "description": "Simple extension that copies the current jira task id",
   "icons": {
-    "16": "images/puppy16.png",
-    "48": "images/puppy48.png",
-    "128": "images/puppy.png"
+    "48": "icon.png"
   },
   "action": {
-    "default_icon": "images/puppy.png",
+    "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [

@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
             && projectAndTaskIdMatch[1] !== undefined
             && projectAndTaskIdMatch[2] === undefined
         ) {
+            // Custom template.
+            projectAndTaskIdMatch[1] = '[#' + projectAndTaskIdMatch[1] + ']';
+
             copyToClipboard(projectAndTaskIdMatch[1]);
             status.innerHTML = statusMessage(projectAndTaskIdMatch[1])
         }
@@ -39,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
             && projectAndTaskIdMatch[1] === undefined
             && projectAndTaskIdMatch[2] !== undefined
         ) {
+            // Custom template.
+            projectAndTaskIdMatch[2] = '[#' + projectAndTaskIdMatch[2] + ']';
+
             copyToClipboard(projectAndTaskIdMatch[2]);
             status.innerHTML = statusMessage(projectAndTaskIdMatch[2])
         }
